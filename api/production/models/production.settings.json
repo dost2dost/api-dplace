@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productions",
+  "info": {
+    "name": "production"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Desc": {
+      "type": "text"
+    }
+  }
+}
