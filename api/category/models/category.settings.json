@@ -1,21 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "productions",
+  "collectionName": "categories",
   "info": {
-    "name": "production"
+    "name": "category"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "Desc": {
-      "type": "text"
+    "products": {
+      "collection": "product",
+      "via": "categories",
+      "dominant": true
     }
   }
 }
